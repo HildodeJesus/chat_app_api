@@ -2,7 +2,7 @@ import { v4 } from "uuid";
 
 export default class User {
 	public id: string;
-	public name: string;
+	public name?: string;
 	public phone: string;
 	public created_at: Date;
 	public updated_at: Date;

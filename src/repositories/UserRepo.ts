@@ -18,8 +18,6 @@ export default class UserRepo {
 	}
 
 	validate(user: User) {
-		if (validator.isEmpty(user.name))
-			throw createCustomApiError("Nome não informado", 400);
 		if (validator.isMobilePhone(user.phone, "pt-BR"))
 			throw createCustomApiError("Telefone inválido", 400);
 	}
